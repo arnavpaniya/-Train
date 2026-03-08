@@ -63,7 +63,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
                             key={link.id}
                             onClick={() => setActiveTab(link.id)}
                             className={cn(
-                                "w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl text-sm font-bold transition-all duration-300 group relative",
+                                "w-full flex items-center justify-start gap-4 px-5 py-4 rounded-[20px] text-sm font-bold transition-all duration-300 group relative",
                                 isActive
                                     ? "bg-primary text-white shadow-xl shadow-primary/30"
                                     : "text-slate-500 hover:text-white hover:bg-white/[0.03]"
