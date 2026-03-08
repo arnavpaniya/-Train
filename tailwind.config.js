@@ -7,28 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#090E1A',
-        primary: '#00E5CC',
-        warning: '#F5A623',
-        alert: '#FF3B5C',
-        panel: 'rgba(16, 23, 41, 0.6)',
+        background: '#04070F', // Deeper navy
+        surface: '#0B1120', // Card background
+        primary: '#3B82F6', // Modern blue
+        secondary: '#8B5CF6', // Purple accent
+        accent: '#00D1FF', // Cyan highlight
+        warning: '#F59E0B',
+        alert: '#EF4444',
+        success: '#10B981',
       },
       fontFamily: {
-        mono: ['"JetBrains Mono"', 'monospace'],
         sans: ['"Inter"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
       },
       backgroundImage: {
-        'scanline': 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
-      },
-      animation: {
-        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'drift-alert': 'drift-alert 2s ease-in-out infinite',
-      },
-      keyframes: {
-        'drift-alert': {
-          '0%, 100%': { borderColor: 'rgba(255, 59, 92, 0.2)', boxShadow: '0 0 0px rgba(255, 59, 92, 0)' },
-          '50%': { borderColor: 'rgba(255, 59, 92, 1)', boxShadow: '0 0 20px rgba(255, 59, 92, 0.4)' },
-        }
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%)',
       }
     },
   },
